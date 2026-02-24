@@ -10,7 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
-  block-size: 800px;
+  min-height: 800px;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -333,10 +333,7 @@ ol {
   padding-right: 3px;
 }
 
-.result__video-container {
-  position: relative;
-}
-
+.result__video-container,
 .content__list-container {
   position: relative;
 }
