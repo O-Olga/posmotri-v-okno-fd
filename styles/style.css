@@ -58,9 +58,8 @@ ol {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  overflow: hidden;
   width: 1140px;
-  height: 534px;
+  min-height: 534px;
   gap: 30px;
 }
 
@@ -73,7 +72,7 @@ ol {
 
 .content__details {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -133,7 +132,7 @@ ol {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   width: 399px;
   font-weight: 700;
   font-size: 75px;
@@ -153,7 +152,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
@@ -167,13 +166,13 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 196px;
@@ -274,38 +273,34 @@ ol {
   font-weight: 700;
   cursor: pointer;
   outline: none;
+  min-height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   align-self: flex-end;
 }
 
 .more-button {
   width: 390px;
-  height: 34px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   flex: none;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
 }
 
 .button:focus-visible {
   outline: 1px double #fff;
+  outline-offset: 1px
 }
 
 .content__card-link_current {
